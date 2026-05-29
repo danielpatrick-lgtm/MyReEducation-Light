@@ -60,6 +60,11 @@ function WhySection() {
 // ─── SECTION 3 ──────────────────────────────────────────────
 function HowSection() {
   const [style, setStyle] = React.useState('Online');
+  const STYLE_BLURBS = {
+    'Online': 'Self-paced and 100% remote. Study anywhere, on your schedule. Most finish in as little as 4 weeks.',
+    'Virtual': 'Live instructor-led classes over video. Weekly cohort sessions and real-time Q&A, typically over 8 weeks.',
+    'In-Person': 'Hands-on classroom learning at our campuses. Role-play, networking, and brokerage tours alongside your cohort.',
+  };
   return (
     <section id="how" className="section dark">
       <div className="container">
@@ -81,6 +86,7 @@ function HowSection() {
                 </button>
               ))}
             </div>
+            <p className="style-blurb">{STYLE_BLURBS[style]}</p>
           </div>
           <div className="step">
             <div className="step-num">02</div>

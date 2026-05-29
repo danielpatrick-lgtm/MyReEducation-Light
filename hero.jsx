@@ -24,7 +24,7 @@ function Hero() {
               <a className="btn btn-gold" href="#states">
                 <Icon.Rocket size={15}/> Get Licensed
               </a>
-              <a className="btn btn-ghost" href="#">
+              <a className="btn btn-ghost" href="#states">
                 <Icon.Calendar size={15}/> View Upcoming Classes
               </a>
             </div>

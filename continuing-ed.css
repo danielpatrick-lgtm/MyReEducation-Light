@@ -1,0 +1,212 @@
+/* Continuing Education page-specific styles */
+
+/* ─── ELIGIBILITY / NOTE CALLOUT ─────────────────────────── */
+.ce-note {
+  margin-top: 36px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  max-width: 720px;
+  padding: 18px 22px;
+  border-radius: 14px;
+  background: rgba(47,151,191,0.10);
+  border: 1px solid rgba(47,151,191,0.32);
+  backdrop-filter: blur(4px);
+}
+.ce-note svg { color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+.ce-note p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: rgba(21,33,29,0.86);
+}
+.ce-note strong { color: var(--ink); }
+
+/* ─── COURSES (sample CE list) ───────────────────────────── */
+.ce-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+@media (max-width: 820px) { .ce-courses-grid { grid-template-columns: 1fr; } }
+
+.ce-course-card {
+  position: relative;
+  padding: 30px 30px 28px;
+  border-radius: 18px;
+  background: var(--bg-matte);
+  border: 1px solid rgba(15,26,23,0.10);
+  transition: transform .35s ease, border-color .35s, box-shadow .35s;
+}
+.ce-course-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(47,151,191,0.45);
+  box-shadow: 0 26px 48px -28px rgba(15,26,23,0.4);
+}
+.ce-course-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.ce-course-cat {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(47,151,191,0.10);
+  border: 1px solid rgba(47,151,191,0.22);
+}
+.ce-course-hours {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.ce-course-card h3 {
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.ce-course-code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  color: rgba(21,33,29,0.55);
+  margin-bottom: 14px;
+}
+.ce-course-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(21,33,29,0.78);
+  margin: 0;
+}
+.ce-courses-foot {
+  margin-top: 32px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ─── ONLINE PACKAGES (California) ───────────────────────── */
+.ce-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+@media (max-width: 880px) { .ce-packages-grid { grid-template-columns: 1fr; } }
+
+.ce-package-card {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 30px 30px;
+  border-radius: 18px;
+  background: var(--bg-matte);
+  border: 1px solid rgba(15,26,23,0.10);
+  transition: transform .35s ease, border-color .35s, box-shadow .35s;
+}
+.ce-package-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(47,151,191,0.45);
+  box-shadow: 0 26px 48px -28px rgba(15,26,23,0.4);
+}
+.ce-package-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 18px;
+}
+.ce-package-card h3 {
+  font-size: 23px;
+  letter-spacing: -0.015em;
+  line-height: 1.18;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+.ce-package-desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: rgba(21,33,29,0.78);
+  margin: 0 0 24px;
+  flex: 1;
+}
+.ce-package-card .btn { width: 100%; justify-content: center; }
+
+/* ─── RESOURCES ──────────────────────────────────────────── */
+.ce-resources-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+@media (max-width: 820px) { .ce-resources-grid { grid-template-columns: 1fr; } }
+
+.ce-resource-card {
+  padding: 34px 32px;
+  border-radius: 18px;
+  border: 1px solid rgba(15,26,23,0.10);
+  background: var(--bg-matte);
+}
+.ce-resource-card h3 {
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin: 0 0 8px;
+  color: var(--ink);
+}
+.ce-resource-card > p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--text-dim);
+  margin: 0 0 22px;
+}
+.ce-resource-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ce-resource-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 11px;
+  border: 1px solid rgba(15,26,23,0.12);
+  background: rgba(21,33,29,0.02);
+  color: var(--ink);
+  font-size: 14.5px;
+  font-weight: 500;
+  transition: all .2s;
+}
+.ce-resource-link:hover {
+  border-color: var(--gold);
+  background: rgba(47,151,191,0.08);
+}
+.ce-resource-link .ce-rl-ic {
+  width: 30px; height: 30px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(47,151,191,0.12);
+  color: var(--gold);
+}
+.ce-resource-link span:nth-child(2) { flex: 1; }
+.ce-resource-arrow { color: rgba(21,33,29,0.40); }
+.ce-resource-link:hover .ce-resource-arrow { color: var(--gold); }
+
+.ce-contact {
+  margin-top: 16px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--text-dim);
+}
+.ce-contact strong { color: var(--ink); }
+.ce-contact a { color: var(--gold); }

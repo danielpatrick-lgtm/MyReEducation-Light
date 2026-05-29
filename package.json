@@ -1,0 +1,9 @@
+{
+  "name": "real-estate-academy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Real Estate Academy - static marketing site (Arizona · California · Nevada)",
+  "scripts": {
+    "start": "npx serve ."
+  }
+}
